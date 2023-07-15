@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
+  <link rel="stylesheet" href="./styles.css" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,65 +17,130 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <main>
+    <!-- Person Description + List Buttons -->
+    <div>
+      <div>
+        <img src="./images/image-jeremy.png" alt="Person Image">
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
+      <div>
+        <ul>
+          <li class="daily">Daily</li>
+          <li class="weekly active">Weekly</li>
+          <li class="monthly">Monthly</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Work Stats -->
+    <div class="work">
+      <div class="work-image">
+        <img src="./images/icon-work.svg" alt="Work Icon">
+      </div>
+      <div class="work-main">
+        <div class="work-header">
+          <h2>Work</h2>
+          <img src="./images/icon-ellipsis.svg" alt="Ellipsis">
+        </div>
+        <div class="work-stats">
+          <div class="current-work">32hrs</div>
+          <div class="previous-work">Last Week - 36 hrs</div>
+        </div>
+      </div>
+    </div>
 
-  Daily
-  Weekly
-  Monthly
+    <!-- Play Stats -->
+    <div class="play">
+      <div class="play-image">
+        <img src="./images/icon-play.svg" alt="Play Icon">
+      </div>
+      <div class="play-main">
+        <div class="play-header">
+          <h2>Play</h2>
+          <img src="./images/icon-ellipsis.svg" alt="Ellipsis">
+        </div>
+        <div class="play-stats">
+          <div class="current-play">32hrs</div>
+          <div class="previous-play">Last Week - 36 hrs</div>
+        </div>
+      </div>
+    </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+    <!-- Study Stats -->
+    <div class="study">
+      <div class="study-image">
+        <img src="./images/icon-study.svg" alt="Study Icon">
+      </div>
+      <div class="study-main">
+        <div class="study-header">
+          <h2>Study</h2>
+          <img src="./images/icon-ellipsis.svg" alt="Ellipsis">
+        </div>
+        <div class="study-stats">
+          <div class="current-study">32hrs</div>
+          <div class="previous-study">Week - 36 hrs</div>
+        </div>
+      </div>
+    </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <!-- Exercise Stats -->
+    <div class="exercise">
+      <div class="exercise-image">
+        <img src="./images/icon-exercise.svg" alt="Exercise Icon">
+      </div>
+      <div class="exercise-main">
+        <div class="exercise-header">
+          <h2>Exercise</h2>
+          <img src="./images/icon-ellipsis.svg" alt="Ellipsis">
+        </div>
+        <div class="exercise-stats">
+          <div class="current-exercise">32hrs</div>
+          <div class="previous-exercise">Week - 36 hrs</div>
+        </div>
+      </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <!-- Social Stats -->
+    <div class="social">
+      <div class="social-image">
+        <img src="./images/icon-social.svg" alt="Social Icon">
+      </div>
+      <div class="social-main">
+        <div class="social-header">
+          <h2>Social</h2>
+          <img src="./images/icon-ellipsis.svg" alt="Ellipsis">
+        </div>
+        <div class="social-stats">
+          <div class="current-social">32hrs</div>
+          <div class="previous-social">Week - 36 hrs</div>
+        </div>
+      </div>
+    </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+    <!-- Self Care Stats -->
+    <div class="self-care">
+      <div class="self-care-image">
+        <img src="./images/icon-self-care.svg" alt="self-care Icon">
+      </div>
+      <div class="self-care-main">
+        <div class="self-care-header">
+          <h2>Self Care</h2>
+          <img src="./images/icon-ellipsis.svg" alt="Ellipsis">
+        </div>
+        <div class="self-care-stats">
+          <div class="current-self-care">32hrs</div>
+          <div class="previous-self-care">Week - 36 hrs</div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/chetanhaobijam">Chetan Haobijam</a>.
   </div>
+
+  <script src="/main.js"></script>
 </body>
 </html>
