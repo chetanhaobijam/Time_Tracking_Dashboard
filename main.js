@@ -7,6 +7,23 @@ const statHeader = document.querySelectorAll(".stat-header");
 const currentData = document.querySelectorAll(".current-data");
 const previousData = document.querySelectorAll(".previous-data");
 
+// Timeframes Click Events to add Active Class
+daily.addEventListener("click", () => {
+    weekly.classList.remove("active");
+    monthly.classList.remove("active");
+    daily.classList.add("active");
+});
+weekly.addEventListener("click", () => {
+    daily.classList.remove("active");
+    monthly.classList.remove("active");
+    weekly.classList.add("active");
+});
+monthly.addEventListener("click", () => {
+    daily.classList.remove("active");
+    weekly.classList.remove("active");
+    monthly.classList.add("active");
+});
+
 // Determine whether to add hr or hrs function
 const determineHours = (num) => {
     if(num === 1) {
