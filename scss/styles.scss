@@ -4,7 +4,7 @@ body {
     background-color: $very-dark-blue;
     color: $pale-blue;
     font: $font-stack;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 main {
@@ -170,9 +170,9 @@ main {
 }
 
 .attribution {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    padding-bottom: 1rem;
+    padding: 1rem;
     text-align: center;
     width: 100%;
 
