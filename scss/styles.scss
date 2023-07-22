@@ -14,7 +14,7 @@ main {
     margin-top: 5rem;
 }
 
-.person {
+.person, .content {
     width: 80%;
 }
 
@@ -82,13 +82,7 @@ main {
     color: $pale-blue;
 }
 
-.work, .play, .study, .exercise, .social, .self-care {
-    width: 80%;
-}
-
-
-.work-image, .play-image, .study-image, .exercise-image, .social-image, .self-care-image {
-    background-color: #ff8c66;
+.image {
     padding: 0 0.5rem;
     display: flex;
     justify-content: flex-end;
@@ -99,41 +93,76 @@ main {
     border-radius: 10px;
 }
 
-.work-image img, .play-image img, .study-image img, .exercise-image img, .social-image img, .self-care-image img {
+.work .image {
+    background-color: #ff8c66;
+}
+
+.play .image {
+    background: $play-soft-blue;
+}
+
+.study .image {
+    background: $study-light-red;
+}
+
+.exercise .image {
+    background: $exercise-lime-green;
+}
+
+.social .image {
+    background: $social-violet;
+}
+
+.self-care .image {
+    background: $self-care-soft-orange;
+}
+
+.image img {
     position: absolute;
     top: -0.3rem;
 }
 
-
-.work-main, .play-main, .study-main, .exercise-main, .social-main, .self-care-main {
+.main {
     background-color: $dark-blue;
     padding: 1rem;
     position: relative;
     z-index: 2;
     margin-top: -2.5rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-.play-image {
-    background: $play-soft-blue;
+.main:hover {
+    background-color: lighten($dark-blue, 15%);
 }
 
-.study-image {
-    background: $study-light-red;
+.header, .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.exercise-image {
-    background: $exercise-lime-green;
+.stat-header {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
-.social-image {
-    background: $social-violet;
+.header img {
+    opacity: 0.5;
 }
 
-.self-care-image {
-    background: $self-care-soft-orange;
+.header img:hover {
+    opacity: 1;
 }
 
+.current-data {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.previous-data {
+    color: $desaturated-blue;
+}
 
 .active {
     color: $pale-blue !important;
