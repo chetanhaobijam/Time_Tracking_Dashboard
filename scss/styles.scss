@@ -4,6 +4,7 @@ body {
     background-color: $very-dark-blue;
     color: $pale-blue;
     font: $font-stack;
+    overflow-x: none;
 }
 
 main {
@@ -168,8 +169,22 @@ main {
     color: $pale-blue !important;
 }
 
+.attribution {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
 
+    a {
+        color: #fff;
+        text-decoration: none;
 
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 
 
 
